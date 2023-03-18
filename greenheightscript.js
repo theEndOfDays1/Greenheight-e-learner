@@ -9,10 +9,10 @@ const closeMenu = document.getElementById("close-menu");
 const header = document.getElementById("header");
 
 openMenu.addEventListener("click", function(){
-    header.style.display = "block"
+    header.style.transform = "translateX(0%)";
 })
 closeMenu.addEventListener("click", function(){
-    header.style.display = "none"
+    header.style.transform = "translateX(150%)";
 })
 
 /* let recall = window.prompt("Welcome to the Greenheight E-learning community. Please enter your name below");
