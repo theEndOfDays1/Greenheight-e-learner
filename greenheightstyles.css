@@ -228,19 +228,26 @@ hr{
         transform: skewY(0deg);
         max-width: 100%;
         max-height: 30%;
-        /* top: 0; */
+        top: 75vh; 
     }
     #header{
-        display: none;
-        min-width: 50%;
+        transform: translateX(-150%);
+        transition: all .5s ease-in-out;
+        box-shadow: 0 5px 30px .5px;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        min-width: 55%;
         min-height: 100%;
         border-bottom-left-radius: 0px;
         border-top-right-radius: 20px;
+        background-color: var(--scroll-color);
         z-index: 19;
     }
     #header > img{
-        min-width: 12em;
-        height: 10em;
+        width: 9em;
+        height: 8em;
         position: absolute;
         left: 1.2em;
         top: .5em;
@@ -252,6 +259,7 @@ hr{
         top: 5px;
         z-index: 20;
         font-size: 2.5em;
+        border-radius: 500px;
     }
     #hr1{
         display: block;
