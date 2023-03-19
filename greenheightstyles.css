@@ -272,7 +272,7 @@ hr{
         display: block;
         width: 100%;
         position: absolute;
-        top: 70%;
+        top: 75%;
     }
     .heading{
         display: none;
@@ -292,6 +292,9 @@ hr{
         display: block;
         padding: 13px auto;
         margin: 40px;
+    }
+    .nav-block a::after{
+        display: none;
     }
     #my-account{
         background-color: var(--scroll-color);
