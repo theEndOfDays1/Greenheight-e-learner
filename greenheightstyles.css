@@ -292,6 +292,9 @@ hr{
         padding: 20px auto;
         margin: 40px;
     }
+    #my-account{
+        background-color: var(--scroll-color);
+    }
     #menu{
         display: block;
         position: fixed;
