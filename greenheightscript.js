@@ -12,7 +12,7 @@ openMenu.addEventListener("click", function(){
     header.style.transform = "translateX(0%)";
 })
 closeMenu.addEventListener("click", function(){
-    header.style.transform = "translateX(150%)";
+    header.style.transform = "translateX(-150%)";
 })
 
 /* let recall = window.prompt("Welcome to the Greenheight E-learning community. Please enter your name below");
