@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Comfortaa:wght@300&family=M+PLUS+2:wght@100;200;300;400;500;600;700;800;900&family=Passions+Conflict&family=Quicksand:wght@300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100&family=Thasadith:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Links -->
+    <title>about</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* outline: 1px solid red; */
+        }
+        html, body{
+            margin: 0;
+            padding: 0;
+            font-family:  Raleway,'M PLUS 2', 'Thasadith', system-ui, sans-serif;
+        }
+        body{
+            background-image: linear-gradient(to bottom, #ffffff, 80%, #a8a7a7);
+            background-attachment: fixed;
+            height: 100rem;
+        }
+        body::after{
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: #c47900;
+            display: block;
+            position: absolute;
+            top: 83vh;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            padding: 5.5rem 0;
+            transform: skewY(-22deg);
+            transform-origin: 0%;
+        }
+        .about-topic{
+            position: absolute;
+            right: 2em;
+            top: 10.89rem;
+            width: 15.1%;
+            display: inline-block;
+            text-align: end;
+        }
+        .about-span{
+            font-size: 3.69em;
+            font-weight: 600;
+            position: relative;
+            color: #fff;
+            /* color: #022402; */
+        }
+        .about-span::before{
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 23px;
+            left: -27.9px;
+            /* background-color: #022402; */
+            background-color: #fff;
+            border-radius: 500px;
+            font-size: .55em;
+            width: .59em;
+            height: .59em;
+        }
+        .about-topic a{
+            padding: .9em .5em;
+            text-decoration: none;
+            /* color: #022402; */
+            color: #fff;
+            display: block;
+            font-size: 1em;
+        }
+        .about-print{
+            width: calc(84.89% - 10em);
+            height: 70%;
+            position: absolute;
+            top: 10.89rem;
+            left: 1.5em;
+            color: #fff;
+            background-color: #011301;
+            text-align: start;
+            font-weight: 500;
+            padding: 0 2rem;
+            border-radius: 50px;
+        }
+        .underline{
+            display: block;
+            width: 50%;
+            position: absolute;
+            left: 2rem;
+            top: 10.89%;
+        }
+    </style>
+</head>
+<body>
+    <section class="about-print" id="about-print"></section>
+    <aside class="about-topic">
+        <span class="about-span">ABOUT</span>
+        <a href="#" onclick="whoWeAre()">Who we are</a> <hr>
+        <a href="#" onclick="whatWeDo()">What we do</a> <hr>
+        <a href="#" onclick="affiliations()">Affiliations</a> <hr>
+        <a href="#" onclick="testimonials()">Testimonials</a> <hr>
+        <a href="#" onclick="fAQ()">FAQs</a>
+    </aside> 
+
+
+    <script>
+        let aboutArr = [
+            `<span>
+                <h1>WHO WE ARE</h1>
+                <hr class="underline">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur neque voluptatem est amet distinctio ad facere facilis? Quam maxime, et quis numquam inventore fugiat vel commodi praesentium natus autem?
+                Deserunt nostrum eaque illo, provident veniam est numquam pariatur voluptate maxime similique, magni aliquam repudiandae id repellendus optio. Eveniet aut facere quis, rerum exercitationem nihil dolor laudantium voluptates quisquam amet!
+                Culpa, inventore sunt natus earum odio id alias asperiores deleniti laboriosam optio ipsum doloremque, nostrum temporibus voluptatum minima doloribus distinctio porro harum pariatur. Qui facere eos exercitationem sequi accusamus commodi.
+                Expedita, magni dolor. Nobis, fugit dicta. Id, suscipit! Amet, debitis enim tempore minus ratione tempora, ex eum eius vitae autem ab! Culpa, possimus voluptatibus libero veniam saepe maxime reiciendis deserunt!
+                Delectus tempora impedit nobis officia, officiis fugiat quisquam, non dicta odit, quae labore. Consectetur neque ratione aliquid amet excepturi officia nesciunt, facere autem nulla et delectus obcaecati, eligendi quis rerum?
+                Mollitia aliquid sit, voluptatum veniam hic, quod obcaecati nulla impedit itaque consequuntur culpa delectus nesciunt minima incidunt iste architecto! Impedit ipsam repellendus iusto similique omnis. Soluta earum repellendus cupiditate recusandae!
+            </span>        
+            `,
+            `<span>
+                <h1>WHAT WE DO</h1>
+                <hr class="underline">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur neque voluptatem est amet distinctio ad facere facilis? Quam maxime, et quis numquam inventore fugiat vel commodi praesentium natus autem?
+            Deserunt nostrum eaque illo, provident veniam est numquam pariatur voluptate maxime similique, magni aliquam repudiandae id repellendus optio. Eveniet aut facere quis, rerum exercitationem nihil dolor laudantium voluptates quisquam amet!
+            Culpa, inventore sunt natus earum odio id alias asperiores deleniti laboriosam optio ipsum doloremque, nostrum temporibus voluptatum minima doloribus distinctio porro harum pariatur. Qui facere eos exercitationem sequi accusamus commodi.
+            Expedita, magni dolor. Nobis, fugit dicta. Id, suscipit! Amet, debitis enim tempore minus ratione tempora, ex eum eius vitae autem ab! Culpa, possimus voluptatibus libero veniam saepe maxime reiciendis deserunt!
+            Delectus tempora impedit nobis officia, officiis fugiat quisquam, non dicta odit, quae labore. Consectetur neque ratione aliquid amet excepturi officia nesciunt, facere autem nulla et delectus obcaecati, eligendi quis rerum?
+            </span>   
+            `, 
+            `<span>
+                <h1>AFFILIATIONS</h1>
+                <hr class="underline">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur neque voluptatem est amet distinctio ad facere facilis? Quam maxime, et quis numquam inventore fugiat vel commodi praesentium natus autem?
+                Deserunt nostrum eaque illo, provident veniam est numquam pariatur voluptate maxime similique, magni aliquam repudiandae id repellendus optio. Eveniet aut facere quis, rerum exercitationem nihil dolor laudantium voluptates quisquam amet!
+                Culpa, inventore sunt natus earum odio id alias asperiores deleniti laboriosam optio ipsum doloremque, nostrum temporibus voluptatum minima doloribus distinctio porro harum pariatur. Qui facere eos exercitationem sequi accusamus commodi.
+                Expedita, magni dolor. Nobis, fugit dicta. Id, suscipit! Amet, debitis enim tempore minus ratione tempora, ex eum eius vitae autem ab! Culpa, possimus voluptatibus libero veniam saepe maxime reiciendis deserunt!
+                Delectus tempora impedit nobis officia, officiis fugiat quisquam, non dicta odit, quae labore. Consectetur neque ratione aliquid amet excepturi officia nesciunt, facere autem nulla et delectus obcaecati, eligendi quis rerum?
+                Mollitia aliquid sit, voluptatum veniam hic, quod obcaecati nulla impedit itaque consequuntur culpa delectus nesciunt minima incidunt iste architecto! Impedit ipsam repellendus iusto similique omnis. Soluta earum repellendus cupiditate recusandae!
+            </span> 
+            `, 
+            `
+            <span>
+                <h1>TESTIMONIALS</h1>
+                <hr class="underline">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur neque voluptatem est amet distinctio ad facere facilis? Quam maxime, et quis numquam inventore fugiat vel commodi praesentium natus autem?
+                Deserunt nostrum eaque illo, provident veniam est numquam pariatur voluptate maxime similique, magni aliquam repudiandae id repellendus optio. Eveniet aut facere quis, rerum exercitationem nihil dolor laudantium voluptates quisquam amet!
+                Culpa, inventore sunt natus earum odio id alias asperiores deleniti laboriosam optio ipsum doloremque, nostrum temporibus voluptatum minima doloribus distinctio porro harum pariatur. Qui facere eos exercitationem sequi accusamus commodi.
+                Expedita, magni dolor. Nobis, fugit dicta. Id, suscipit! Amet, debitis enim tempore minus ratione tempora, ex eum eius vitae autem ab! Culpa, possimus voluptatibus libero veniam saepe maxime reiciendis deserunt!
+                Delectus tempora impedit nobis officia, officiis fugiat quisquam, non dicta odit, quae labore. Consectetur neque ratione aliquid amet excepturi officia nesciunt, facere autem nulla et delectus obcaecati, eligendi quis rerum?
+                Mollitia aliquid sit, voluptatum veniam hic, quod obcaecati nulla impedit itaque consequuntur culpa delectus nesciunt minima incidunt iste architecto! Impedit ipsam repellendus iusto similique omnis. Soluta earum repellendus cupiditate recusandae!
+            </span>        
+
+            `, 
+            `
+            <span>
+                <h1>FAQs</h1>
+                <hr class="underline">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur neque voluptatem est amet distinctio ad facere facilis? Quam maxime, et quis numquam inventore fugiat vel commodi praesentium natus autem?
+                Deserunt nostrum eaque illo, provident veniam est numquam pariatur voluptate maxime similique, magni aliquam repudiandae id repellendus optio. Eveniet aut facere quis, rerum exercitationem nihil dolor laudantium voluptates quisquam amet!
+                Culpa, inventore sunt natus earum odio id alias asperiores deleniti laboriosam optio ipsum doloremque, nostrum temporibus voluptatum minima doloribus distinctio porro harum pariatur. Qui facere eos exercitationem sequi accusamus commodi.
+                Expedita, magni dolor. Nobis, fugit dicta. Id, suscipit! Amet, debitis enim tempore minus ratione tempora, ex eum eius vitae autem ab! Culpa, possimus voluptatibus libero veniam saepe maxime reiciendis deserunt!
+                Delectus tempora impedit nobis officia, officiis fugiat quisquam, non dicta odit, quae labore. Consectetur neque ratione aliquid amet excepturi officia nesciunt, facere autem nulla et delectus obcaecati, eligendi quis rerum?
+                Mollitia aliquid sit, voluptatum veniam hic, quod obcaecati nulla impedit itaque consequuntur culpa delectus nesciunt minima incidunt iste architecto! Impedit ipsam repellendus iusto similique omnis. Soluta earum repellendus cupiditate recusandae!
+            </span>
+            `
+        ];
+        let aboutPrint = document.getElementById("about-print");
+        if(aboutPrint){
+            whoWeAre()
+        };
+        function whoWeAre(){
+            aboutPrint.innerHTML = aboutArr[0];
+        }
+        function whatWeDo(){
+            aboutPrint.innerHTML = aboutArr[1];
+        }
+        function affiliations(){
+            aboutPrint.innerHTML = aboutArr[2];
+        }
+        function testimonials(){
+            aboutPrint.innerHTML = aboutArr[3];
+        }
+        function fAQ(){
+            aboutPrint.innerHTML = aboutArr[4];
+        }
+    </script>
+</body>
+</html>
